@@ -1,0 +1,267 @@
+//-----------------------------App.Js------------------------------
+.horizontalNavbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+// -------------------------------------------------Horizantal Nav bar----------------------------------------------------------
+//PayVoo Logo
+
+img {
+  top: 20px;
+  left: 44px;
+  height: 38px;
+  opacity: 1;
+}
+//-------------------------------------------------------------------
+.logo {
+  padding: 20px 0;
+  padding-left: 25px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.floated {
+  display: inline;
+  .bell {
+    position: absolute;
+    top: 20px;
+    left: 1125px;
+  }
+  .profile {
+    position: absolute;
+    top: 20px;
+    left: 1200px;
+  }
+  .userName {
+    position: absolute;
+    top: 25px;
+    left: 1260px;
+  }
+  .dropDown {
+    position: absolute;
+    top: 33px;
+    left: 1380px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 1px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCAxMCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogI2YwZjsKICAgICAgICBvcGFjaXR5OiAwOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICM3MDcwNzA7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJDaGV2cm9uIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4KSByb3RhdGUoOTApIj4KICAgIDxyZWN0IGlkPSJGcmFtZSIgY2xhc3M9ImNscy0xIiB3aWR0aD0iMTAiIGhlaWdodD0iNiIvPgogICAgPHBhdGggaWQ9IlNoYXBlIiBjbGFzcz0iY2xzLTIiIGQ9Ik0xMCwxQTEsMSwwLDAsMCw4LjI5My4yOTNMNSwzLjU4NiwxLjcwNy4yOTNBMSwxLDAsMSwwLC4yOTMsMS43MDdsNCw0YTEsMSwwLDAsMCwxLjQxNSwwbDQtNEExLDEsMCwwLDAsMTAsMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgOCkgcm90YXRlKC05MCkiLz4KICA8L2c+Cjwvc3ZnPgo=)
+      no-repeat;
+    transition: -webkit-transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms;
+  }
+}
+
+//--------------------------------Side Bar--------------------------------------
+
+.sideBar-col {
+  background-image: url("../src/images/dashBack.png");
+  top: 100px;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  .button {
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    box-shadow: none;
+    a {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      color: #000;
+    }
+    a:hover:not(.active) {
+      color: white;
+      background-color: #2a3477;
+    }
+    a.active {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: #2a3477;
+      color: white;
+    }
+  }
+}
+.dashHeight {
+  margin-top: 100px;
+  margin-left: 25%;
+  padding: 1px 16px;
+}
+
+//----------------------------------AccountsButtons-----------------------------------------
+.accounts {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  .buttons {
+    position: absolute;
+    left: 774px;
+    top: 5px;
+    display: inline-block;
+  }
+  button {
+    background: #f37221;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 10px 21px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  }
+}
+//-------------------------------------AccountsNavbar-----------------------------------------
+.accountsNavbar {
+  span {
+    font-weight: bold;
+  }
+  .clear {
+    clear: both;
+  }
+
+  .slide-toggle {
+    display: none;
+  }
+
+  .slidemenu {
+    font-family: arial, sans-serif;
+    max-width: 600px;
+    margin-top: 35px;
+    overflow: hidden;
+  }
+
+  .slidemenu label {
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #333;
+    opacity: 0.2;
+  }
+
+  .slidemenu label:hover {
+    cursor: pointer;
+    color: #666;
+  }
+
+  .slidemenu label span {
+    display: block;
+    padding: 10px;
+  }
+
+  .slidemenu label .icon {
+    font-size: 20px;
+    border: solid 2px #333;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+  }
+
+  /*Bar Style*/
+
+  .slider {
+    position: absolute;
+    width: 75%;
+    display: block;
+    height: 5px;
+    background: #f8ceb4;
+    margin-top: 10px;
+    margin-right: 50px;
+    border-radius: 5px;
+  }
+
+  .slider .bar {
+    width: 15%;
+    height: 5px;
+    background: #7d83ab;
+    border-radius: 5px;
+  }
+
+  /*Animations*/
+  .slidemenu label,
+  .slider .bar {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+  }
+
+  /*Toggle*/
+
+  .slidemenu .slide-toggle:checked + label {
+    opacity: 1;
+  }
+
+  .slidemenu #slide-item-1:checked ~ .slider .bar {
+    margin-left: 0;
+  }
+  .slidemenu #slide-item-2:checked ~ .slider .bar {
+    margin-left: 13%;
+  }
+  .slidemenu #slide-item-3:checked ~ .slider .bar {
+    margin-left: 26%;
+  }
+  .slidemenu #slide-item-4:checked ~ .slider .bar {
+    margin-left: 39%;
+  }
+}
+//-------------------------------------SubAccounts----------------------------------------------
+
+.subAccounts {
+  .nav {
+    margin: 26px 10px 10px 676px;
+    display: inline-flex;
+    position: absolute;
+  }
+  h5 {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 31px;
+    font-weight: bold;
+  }
+}
+//-----------------------------------------Account Card-------------------------------------------------
+
+.accountCard {
+  margin-top: -80px;
+  .account_card {
+    margin-bottom: 5px;
+    color: #666666;
+    box-shadow: #1494b8 0px 5px 1px 0px;
+    img {
+      margin-right: 110px;
+    }
+    .float_details {
+      margin-top: 5px;
+      float: right;
+      .status {
+        background-color: #28a745;
+        padding: 5px 35px;
+        border-radius: 25px;
+        color: #ffffff;
+      }
+    }
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
